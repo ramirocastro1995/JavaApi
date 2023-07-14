@@ -11,20 +11,10 @@ import java.time.Month;
 import java.util.List;
 
 @SpringBootApplication
-@RestController
 public class DemoApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(DemoApplication.class, args);
 	}
-	@GetMapping
-	public List<Student> hello(){
-		return List.of(new Student(
-				1l,
-				"Ramiro",
-				"ramiro@gmail.com",
-				LocalDate.of(1995, Month.MAY,9),
-				21
-		));
-	}
+
 }
