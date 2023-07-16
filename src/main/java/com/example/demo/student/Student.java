@@ -24,6 +24,8 @@ public class Student {
     private LocalDate dob;
     private Integer age;
 
+    public Student(){}
+
     public Student(Long id, String name, String email, LocalDate dob, Integer age) {
         this.id = id;
         this.name = name;
